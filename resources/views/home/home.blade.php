@@ -116,7 +116,7 @@
 
 
     <!-- Banner Area Start -->
-    <div class="banner__three" data-background="{{asset('home/img/shape/banner-bg-3.jpg')}}" style="margin-top: -5rem;">
+    <div class="banner__three" data-background="{{asset('home/img/shape/banner-bg-3.jpg')}}">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-7 col-lg-7 lg-mb-30">
