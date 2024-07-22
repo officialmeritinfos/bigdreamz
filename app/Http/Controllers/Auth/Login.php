@@ -12,6 +12,7 @@ use App\Models\User;
 use App\Notifications\EmailVerifyMail;
 use App\Notifications\LoginMail;
 use App\Notifications\TwoFactorMail;
+use App\Rules\ReCaptcha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -35,7 +36,8 @@ class Login extends Controller
         $web = GeneralSetting::where('id',1)->first();
         $validator = Validator::make($request->input(),[
             'email'=>['required','string','exists:users,username'],
-            'password'=>['required']
+            'password'=>['required'],
+            'g-recaptcha-response' => ['required', new ReCaptcha]
         ],[],['email'=>'Username']);
 
         if ($validator->fails()){
