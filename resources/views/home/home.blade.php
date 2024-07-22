@@ -352,6 +352,36 @@
     </div>
     <!-- Why Choose Us Area End -->
 
+    <!-- About Area Start -->
+    <div class="about__three section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-6 lg-mb-30">
+                    <div class="about__three-title">
+                        <span class="subtitle-three">{{$siteName}} Top Investor</span>
+                        <h2>POISED FOR THE FUTURE AHEAD</h2>
+                        <p>
+                           Over the years, we have had a number of investors who are dedicated to investing with us, and have
+                            earned over 500% on their capital. We use this to celebrate them, and to also showcase their
+                            excellence and zeal in making the right choices.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                    <div class="about__three-right">
+                        <div class="about__three-right-image dark__image">
+                            <div class="about__three-right-image-one">
+                                <img src="{{asset('home/images/topinvestor.jpeg')}}" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Area End -->
+
     <div class="pricing-area" style="margin-bottom: 5rem;margin-top: 5rem;">
         <div class="container">
             <div class="section-title">
